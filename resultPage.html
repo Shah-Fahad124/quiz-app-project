@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResultPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h2 class="result"></h2>
+
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let receivedData = sessionStorage.getItem('myData');
+        let result = document.querySelector('.result')
+        result.textContent = receivedData
+    </script>
+</body>
+
+</html>
